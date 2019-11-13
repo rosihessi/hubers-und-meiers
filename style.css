@@ -8,3 +8,39 @@ div{
   border: 1px solid black;
   margin: 5px;
 }
+.huber{
+    background-color:red;
+}
+.meier{
+    background-color:blue;
+}
+
+#lisa{
+    background-color: yellow;
+}
+#luis{
+    background-color: green;
+}
+
+#georg,#susi{
+    background-color: pink
+    /* man könnte hier auch .huber div sagen hat 11 Pkt, da #lisa stärker 100 pkt ist, bleibt daher gelb */
+}
+
+#susi.meier{
+    background-color: blue;
+/* ich spreche mit idsusi als auch Klasse meier */
+}
+#brigitte{
+    background-color: grey;
+/* } hat 100 pkt */
+.meier #brigitte{
+    background-color: orange;
+    /* hat 110 pkt */
+}
+.meier div#brigitte{
+    /* in ein Element mit der Klasse meier ist das div */
+       background: lightblue;
+       /* man könnte hier auch .huber div sagen, da #lisa stärker ist, bleibt daher gelb */
+       /* hat 111pkt */
+}

@@ -6,6 +6,12 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
 
+    <style media="screen">
+    #luis{
+        background-color: violet;
+        /* 1x luis im stylesheet, aber nochmal 1xluis jetzt später im style, schlägt also stylsheet */
+    }
+    </style>
 
 
 
@@ -14,12 +20,13 @@
     <div class="huber">
       <div id="lisa"></div>
       <div id="georg"></div>
-      <div id="susi"></div>
+      <div id="susi" class="meier"></div>
     </div>
 
     <div class="meier">
       <div id="sepp"></div>
-      <div id="luis"></div>
+      <div id="luis" style="background:black;"></div>
+      <!-- style ist jetzt an das element direkt angedockt, ist das stärkste jetzt, ist aber doof, bläht das HTML auf, Notfall -->
       <div id="brigitte"></div>
     </div>
   </body>
